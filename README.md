@@ -102,10 +102,10 @@ python pretrain.py \
 This produces four encoder checkpoints in
 
 
-ckpt/tau_0.1__scale_0.25/task_0/best_model.pth
-ckpt/tau_0.1__scale_0.25/task_1/best_model.pth
-ckpt/tau_0.1__scale_0.25/task_2/best_model.pth
-ckpt/tau_0.1__scale_0.25/task_none/best_model.pth
+`ckpt/tau_0.1__scale_0.25/task_0/best_model.pth`
+`ckpt/tau_0.1__scale_0.25/task_1/best_model.pth`
+`ckpt/tau_0.1__scale_0.25/task_2/best_model.pth`
+`ckpt/tau_0.1__scale_0.25/task_none/best_model.pth`
 
 corresponding to the three VSA spaces and one “fingerprint” baseline space.
 
@@ -175,11 +175,11 @@ results/pair_solvation/.
 
 The repository ships two ready-to-use pair-wise models in ckpt/:
 
-ckpt/leeds.pth – best model on the Leeds benchmark.
+`ckpt/leeds.pth – best model on the Leeds benchmark.`
 
-ckpt/solprop.pth – best model on the SolProp benchmark.
+`ckpt/solprop.pth – best model on the SolProp benchmark.`
 
-Both models use encoders from ckpt/tau_0.1__scale_0.25/ and the configuration
+Both models use encoders from `ckpt/tau_0.1__scale_0.25/` and the configuration
 ep-200_fusion-weighted_mlp-1024-128-64_sd-0_t-16_td-0.0_vd-0_wd-0.0.
 
 You can evaluate them with test_pair.py. Example for the Leeds model:
