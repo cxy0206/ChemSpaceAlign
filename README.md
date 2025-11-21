@@ -180,7 +180,7 @@ The repository ships two ready-to-use pair-wise models in ckpt/:
 `ckpt/solprop.pth – best model on the SolProp benchmark.`
 
 Both models use encoders from `ckpt/tau_0.1__scale_0.25/` and the configuration
-ep-200_fusion-weighted_mlp-1024-128-64_sd-0_t-16_td-0.0_vd-0_wd-0.0.
+`ep-200_fusion-weighted_mlp-1024-128-64_sd-0_t-16_td-0.0_vd-0_wd-0.0`.
 
 You can evaluate them with test_pair.py. Example for the Leeds model:
 
@@ -205,8 +205,8 @@ python test_pair.py \
     --out_dir results/pair_leeds_test
 ```
 
-Similarly, you can replace ckpt/leeds.pth with ckpt/solprop.pth and change
-the test CSV to pair_data/solprop_chemprop_nonaq.csv to evaluate the SolProp
+Similarly, you can replace ckpt/leeds.pth with `ckpt/solprop.pth` and change
+the test CSV to `pair_data/solprop_chemprop_nonaq.csv` to evaluate the SolProp
 model.
 
 Each run logs the MSE and pct(|pred - logS| ≤ 1) for every test set and saves
