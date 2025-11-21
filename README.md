@@ -205,7 +205,7 @@ python test_pair.py \
     --out_dir results/pair_leeds_test
 ```
 
-Similarly, you can replace ckpt/leeds.pth with `ckpt/solprop.pth` and change
+Similarly, you can replace `ckpt/leeds.pth` with `ckpt/solprop.pth` and change
 the test CSV to `pair_data/solprop_chemprop_nonaq.csv` to evaluate the SolProp
 model.
 
