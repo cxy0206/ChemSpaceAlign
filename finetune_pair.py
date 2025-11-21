@@ -54,10 +54,10 @@ Example:
         --train_csv datasets/bigsoldb_chemprop_nonaq.csv \\
         --test_csvs datasets/leeds_all_chemprop.csv,\\
                     datasets/solprop_chemprop_nonaq.csv \\
-        --encoder_ckpts "sweep/tau_0.1__scale_0.25/task_0/best_model.pth,\\
-                         sweep/tau_0.1__scale_0.25/task_1/best_model.pth,\\
-                         sweep/tau_0.1__scale_0.25/task_2/best_model.pth,\\
-                         sweep/tau_0.1__scale_0.25/task_none/best_model.pth" \\
+        --encoder_ckpts "ckpt/tau_0.1__scale_0.25/task_0/best_model.pth,\\
+                         ckpt/tau_0.1__scale_0.25/task_1/best_model.pth,\\
+                         ckpt/tau_0.1__scale_0.25/task_2/best_model.pth,\\
+                         ckpt/tau_0.1__scale_0.25/task_none/best_model.pth" \\
         --space_indices 0,1,2 \\
         --seeds 42,43,44 \\
         --batch_size 64 --val_ratio 0.05 --epochs 200 --weight_decay 1e-5 \\
